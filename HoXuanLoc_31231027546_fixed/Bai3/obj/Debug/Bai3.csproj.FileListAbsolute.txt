@@ -1,0 +1,10 @@
+E:\[LapTrinh_UngDungDesktop]\Module1\Module1Forms_HoSyNamBinh\Bai3\bin\Debug\Bai3.exe.config
+E:\[LapTrinh_UngDungDesktop]\Module1\Module1Forms_HoSyNamBinh\Bai3\bin\Debug\Bai3.exe
+E:\[LapTrinh_UngDungDesktop]\Module1\Module1Forms_HoSyNamBinh\Bai3\bin\Debug\Bai3.pdb
+E:\[LapTrinh_UngDungDesktop]\Module1\Module1Forms_HoSyNamBinh\Bai3\obj\Debug\Bai3.csproj.AssemblyReference.cache
+E:\[LapTrinh_UngDungDesktop]\Module1\Module1Forms_HoSyNamBinh\Bai3\obj\Debug\Bai3.BtHoTen.resources
+E:\[LapTrinh_UngDungDesktop]\Module1\Module1Forms_HoSyNamBinh\Bai3\obj\Debug\Bai3.Properties.Resources.resources
+E:\[LapTrinh_UngDungDesktop]\Module1\Module1Forms_HoSyNamBinh\Bai3\obj\Debug\Bai3.csproj.GenerateResource.cache
+E:\[LapTrinh_UngDungDesktop]\Module1\Module1Forms_HoSyNamBinh\Bai3\obj\Debug\Bai3.csproj.CoreCompileInputs.cache
+E:\[LapTrinh_UngDungDesktop]\Module1\Module1Forms_HoSyNamBinh\Bai3\obj\Debug\Bai3.exe
+E:\[LapTrinh_UngDungDesktop]\Module1\Module1Forms_HoSyNamBinh\Bai3\obj\Debug\Bai3.pdb

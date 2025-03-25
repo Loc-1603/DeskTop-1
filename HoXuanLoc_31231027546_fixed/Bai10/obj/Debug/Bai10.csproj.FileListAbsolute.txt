@@ -1,0 +1,10 @@
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai10\bin\Debug\Bai10.exe.config
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai10\bin\Debug\Bai10.exe
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai10\bin\Debug\Bai10.pdb
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai10\obj\Debug\Bai10.csproj.AssemblyReference.cache
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai10\obj\Debug\Bai10.frmGroupBoxPanel.resources
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai10\obj\Debug\Bai10.Properties.Resources.resources
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai10\obj\Debug\Bai10.csproj.GenerateResource.cache
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai10\obj\Debug\Bai10.csproj.CoreCompileInputs.cache
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai10\obj\Debug\Bai10.exe
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai10\obj\Debug\Bai10.pdb

@@ -1,0 +1,10 @@
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai7\bin\Debug\Bai7.exe.config
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai7\bin\Debug\Bai7.exe
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai7\bin\Debug\Bai7.pdb
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai7\obj\Debug\Bai7.csproj.AssemblyReference.cache
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai7\obj\Debug\Bai7.frmLight.resources
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai7\obj\Debug\Bai7.Properties.Resources.resources
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai7\obj\Debug\Bai7.csproj.GenerateResource.cache
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai7\obj\Debug\Bai7.csproj.CoreCompileInputs.cache
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai7\obj\Debug\Bai7.exe
+C:\Users\GODxDEMON\Downloads\forms-module1-master\forms-module1-master\31231027688_HoSyNamBinh\Tuan2\Module1_2\Bai7\obj\Debug\Bai7.pdb
