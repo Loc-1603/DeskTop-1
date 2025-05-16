@@ -1,81 +1,71 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Windows.Forms;
+
 namespace WinFormsApp
 {
-    partial class Form1
+    public partial class Form1 : Form
     {
-        private System.ComponentModel.IContainer components = null;
-        private System.Windows.Forms.TextBox txtMaSo, txtHoTen, txtNgaySinh, txtEmail;
-        private System.Windows.Forms.Button btnThem, btnLuu;
-        private System.Windows.Forms.ListView lvNhanVien;
-        private System.Windows.Forms.ColumnHeader colMaSo, colHoTen, colNgaySinh, colEmail;
+        string filePath = "dulieu.txt";
 
-        protected override void Dispose(bool disposing)
+        public Form1()
         {
-            if (disposing && (components != null))
-                components.Dispose();
-            base.Dispose(disposing);
+            InitializeComponent();
+            LoadDataFromFile();
         }
 
-        private void InitializeComponent()
+        private void LoadDataFromFile()
         {
-            this.txtMaSo = new System.Windows.Forms.TextBox();
-            this.txtHoTen = new System.Windows.Forms.TextBox();
-            this.txtNgaySinh = new System.Windows.Forms.TextBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.lvNhanVien = new System.Windows.Forms.ListView();
+            if (!File.Exists(filePath)) return;
 
-            this.colMaSo = new System.Windows.Forms.ColumnHeader();
-            this.colHoTen = new System.Windows.Forms.ColumnHeader();
-            this.colNgaySinh = new System.Windows.Forms.ColumnHeader();
-            this.colEmail = new System.Windows.Forms.ColumnHeader();
+            string[] lines = File.ReadAllLines(filePath);
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(';');
+                if (parts.Length == 4)
+                {
+                    ListViewItem item = new ListViewItem(parts[0]);
+                    item.SubItems.Add(parts[1]);
+                    item.SubItems.Add(parts[2]);
+                    item.SubItems.Add(parts[3]);
+                    lvNhanVien.Items.Add(item);
+                }
+            }
+        }
 
-            // TextBoxes và Buttons
-            this.txtMaSo.Location = new System.Drawing.Point(20, 20);
-            this.txtHoTen.Location = new System.Drawing.Point(20, 50);
-            this.txtNgaySinh.Location = new System.Drawing.Point(20, 80);
-            this.txtEmail.Location = new System.Drawing.Point(20, 110);
+        private void lvNhanVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (lvNhanVien.SelectedItems.Count == 0) return;
 
-            this.txtMaSo.Width = this.txtHoTen.Width = this.txtNgaySinh.Width = this.txtEmail.Width = 200;
+            ListViewItem selected = lvNhanVien.SelectedItems[0];
+            txtMaSo.Text = selected.SubItems[0].Text;
+            txtHoTen.Text = selected.SubItems[1].Text;
+            txtNgaySinh.Text = selected.SubItems[2].Text;
+            txtEmail.Text = selected.SubItems[3].Text;
+        }
 
-            this.btnThem.Text = "Thêm";
-            this.btnThem.Location = new System.Drawing.Point(250, 20);
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            btnLuu.Enabled = true;
+        }
 
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.Location = new System.Drawing.Point(250, 60);
-            this.btnLuu.Enabled = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            string ma = txtMaSo.Text;
+            string hoTen = txtHoTen.Text;
+            string ngaySinh = txtNgaySinh.Text;
+            string email = txtEmail.Text;
 
-            // ListView
-            this.lvNhanVien.Location = new System.Drawing.Point(20, 150);
-            this.lvNhanVien.Size = new System.Drawing.Size(400, 200);
-            this.lvNhanVien.View = System.Windows.Forms.View.Details;
-            this.lvNhanVien.FullRowSelect = true;
-            this.lvNhanVien.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-                this.colMaSo, this.colHoTen, this.colNgaySinh, this.colEmail });
+            ListViewItem item = new ListViewItem(ma);
+            item.SubItems.Add(hoTen);
+            item.SubItems.Add(ngaySinh);
+            item.SubItems.Add(email);
+            lvNhanVien.Items.Add(item);
 
-            this.colMaSo.Text = "Mã số";
-            this.colMaSo.Width = 80;
-            this.colHoTen.Text = "Họ tên";
-            this.colHoTen.Width = 100;
-            this.colNgaySinh.Text = "Ngày sinh";
-            this.colNgaySinh.Width = 100;
-            this.colEmail.Text = "Email";
-            this.colEmail.Width = 120;
+            File.AppendAllText(filePath, $"{ma};{hoTen};{ngaySinh};{email}{Environment.NewLine}");
 
-            this.lvNhanVien.SelectedIndexChanged += new System.EventHandler(this.lvNhanVien_SelectedIndexChanged);
-
-            // Form
-            this.ClientSize = new System.Drawing.Size(450, 370);
-            this.Controls.Add(this.txtMaSo);
-            this.Controls.Add(this.txtHoTen);
-            this.Controls.Add(this.txtNgaySinh);
-            this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.btnThem);
-            this.Controls.Add(this.btnLuu);
-            this.Controls.Add(this.lvNhanVien);
-            this.Text = "Danh sách nhân viên";
+            btnLuu.Enabled = false;
         }
     }
 }
